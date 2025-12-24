@@ -1,0 +1,33 @@
+Desafio de Lógica: Matriz Espiral (Abordagem "Walker")
+Contexto: Diferente da abordagem anterior onde "desenhávamos as paredes" de fora para dentro, 
+nesta abordagem simularemos um robô (ou cursor) autônomo. 
+Esta lógica é a base para algoritmos de Pathfinding (GPS), Flood Fill (Pintura) e Crawlers em Visão Computacional.
+
+Objetivo: Escrever uma função que receba um inteiro N e retorne uma matriz NxN preenchida com números de 1 a N² em espiral, 
+utilizando aritmética vetorial para o movimento.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Requisitos Técnicos (Constraints)
+
+Proibido: Você não pode usar variáveis de controle de borda (topo, baixo, esquerda, direita).
+
+Obrigatório: Você deve usar uma lista de tuplas para representar os vetores de direção.
+
+Lógica de Colisão: O "robô" deve verificar a próxima posição antes de se mover. 
+Se a próxima posição estiver fora da matriz OU já estiver preenchida (valor != 0), o robô deve virar 90º à direita.
+
+Rotação: Use aritmética modular (%) ou lógica de índice para reiniciar o ciclo de direções (Direita -> Baixo -> Esquerda -> Cima -> Direita...).
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Tabela de Vetores (Sistema de Coordenadas)
+Considere a matriz como (linha, coluna).
+
+Direita: (0, 1) → Mantém linha, aumenta coluna.
+
+Baixo: (1, 0) → Aumenta linha, mantém coluna.
+
+Esquerda: (0, -1) → Mantém linha, diminui coluna.
+
+Cima: (-1, 0) → Diminui linha, mantém coluna.

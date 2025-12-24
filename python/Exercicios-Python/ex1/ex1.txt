@@ -1,0 +1,14 @@
+O Desafio: "A Matriz Espiral" Crie uma função que receba um número N e retorne uma matriz NxN preenchida com números 
+de 1 a N² em espiral (sentido horário).
+
+Exemplo N=3:
+
+[ [ 1, 2, 3 ],
+  [ 8, 9, 4 ],
+  [ 7, 6, 5 ] ]
+
+Regra: Tente fazer isso apenas com lógica de índices 
+(loops while/for e controle de direção), sem pedir para a IA. 
+Isso vai forçar seu cérebro a visualizar coordenadas (i, j), o que é essencial para visão computacional.
+
+
